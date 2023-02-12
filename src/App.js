@@ -60,6 +60,7 @@ function App() {
       />
     );
   };
+
   /* ----------------------------------------------------------------------------- */
   //for select trailer
   const selectMovie = async (movie) => {
@@ -77,7 +78,6 @@ function App() {
     movies.map((movie) => (
       <Movie key={movie.id} movie={movie} selectedMovie={selectMovie} />
     ));
-
   return (
     <div className="App">
       <header className="header">

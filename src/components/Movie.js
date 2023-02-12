@@ -11,6 +11,17 @@ const Movie = ({ movie, selectedMovie }) => {
        in place of 'smooth' */
     });
   };
+  /* SCROLL */
+  /*   const scrolldown = () => {
+    return (
+      <ScrollButton
+        behavior="smooth"
+        buttonBackgroundColor="red"
+        iconType="arrowUp"
+        style={{ fontSize: "24px" }}
+      />
+    );
+  }; */
   console.log(movie);
   return (
     <div

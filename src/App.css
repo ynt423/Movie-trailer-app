@@ -67,7 +67,7 @@ body {
   color: white;
   text-decoration: double;
   background-color: #0f1014;
-  border: solid white;
+  border: solid rgb(139, 139, 139);
 }
 
 .youtube-container {
@@ -82,4 +82,19 @@ body {
   z-index: 10;
   top: 30px;
   left: 30px;
+}
+
+.button--search {
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+.button--search:hover {
+  opacity: 0.7;
+}
+
+.search-component {
+  position: fixed;
+  right: 80px;
+  top: 20px;
 }

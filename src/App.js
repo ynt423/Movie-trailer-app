@@ -54,7 +54,7 @@ function App() {
         containerClassName={"youtube-container"}
         opts={{
           width: "100%",
-          height: "800px",
+          height: "600px",
           playerVars: { autoplay: 1, controls: 0 },
         }}
       />
@@ -85,12 +85,17 @@ function App() {
           <span>Movie Trailer App</span>
           <form className="input-form" onSubmit={searchMovies}>
             <input
-              className="input-text"
+              className="input-text search-component"
               type="text"
               onChange={(e) => setSearchKey(e.target.value)}
             />
             {/* {searchKey} for testing*/}
-            <button type="submit">Search</button>
+            <button
+              className="button button--search search-component"
+              type="submit"
+            >
+              Search
+            </button>
           </form>
         </div>
       </header>

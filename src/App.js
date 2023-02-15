@@ -83,6 +83,11 @@ function App() {
       <header className="header">
         <div className="header-content max-center">
           <span>Movie Trailer App</span>
+          <img
+            className="movie-logo"
+            src={require("./img/movie_icon.png")}
+            alt=""
+          />
           <form className="input-form" onSubmit={searchMovies}>
             <input
               className="input-text search-component"

@@ -3,6 +3,7 @@ import axios from "axios";
 import { createElement, useEffect, useState } from "react";
 import Movie from "./components/Movie";
 import YouTube from "react-youtube";
+import { ListItemText } from "@mui/material";
 
 function App() {
   const BACKDROP_PATH = "https://image.tmdb.org/t/p/original";
@@ -82,7 +83,7 @@ function App() {
     <div className="App">
       <header className="header">
         <div className="header-content max-center">
-          <span>Movie Trailer App</span>
+          <span className="header-title">Movie Trailer App</span>
           <img
             className="movie-logo"
             src={require("./img/movie_icon.png")}
